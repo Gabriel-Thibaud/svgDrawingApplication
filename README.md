@@ -1,3 +1,4 @@
+Projet effectué dans le cadre du cours log2990 et réalisé avec la contribution avec Xavier Boucher, Yuhan Li, Naser Hamitou, Amine Mattous et Gabriel Thibaud
 # Log2990
 
 Projet généré avec [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
