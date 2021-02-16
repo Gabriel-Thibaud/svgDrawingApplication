@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/app/components/user-manual/tools.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">src/app/components/user-manual</a> tools.ts
+    </h1>
+    <div class='clearfix'>
+    </div>
+    <p class="quiet">
+      Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+    </p>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Items } from './sections';
+&nbsp;
+export const tools: Items[] = [
+    {
+        name: 'Crayon',
+        description:
+            'Le crayon est l\'outil de base du logiciel Polydessin. Il ne sert qu\'à dessiner de simples traits, ' +
+            'sans texture particulière. Il a une pointe ronde, dont l\'épaisseur est configurable (en pixels). ' +
+            'Pour se servir du crayon, il faut garder le bouton gauche de la souris enfoncé en même temps qu\'on ' +
+            'déplace le curseur de celle-ci sur la surface de dessin. Quand on relache le bouton, le logiciel arrête ' +
+            'de dessiner. Le crayon utilse la couleur principale de l\'outil couleur, décrit plus loin dans le guide. ' +
+            'Il est possible de sélectionner l\'outil Crayon avec la touche \'C\' du clavier lorsqu\'on est sur la ' +
+            'vue de Dessin.'
+    },
+    {
+        name: 'Pinceau',
+        description:
+            'Le pinceau fonctionne de la même manière que le crayon. Il n\'en diffère que par la texture du trait. ' +
+            'Il y a le choix d\'au moins cinq textures différentes. L\'épaisseur du trait est encore une fois ' +
+            'configurable en pixels. Le pinceau utilise également la couleur principale choisie avec l\'outil Couleur.' +
+            ' Il est possible de sélectionner l\'outil Pinceau avec la touche \'W\' du clavier lorsqu\'on est sur la ' +
+            'vue de Dessin.'
+    },
+    {
+        name: 'Couleur',
+        description:
+            'L\'outil couleur permet à l\'utilisateur de sélectionner une couleur principale et une couleur ' +
+            'secondaire. Ces couleurs seront combinées aux autres outils de dessin. La couleur principale est ' +
+            'utilisée pour dessiner et la couleur secondaire est utilisée pour les contours lorsqu\'il y en a. ' +
+            'Il est possible d\'inverser les deux couleurs et de définir la transparence pour chaque couleur. ' +
+            'La sélection des couleurs se fait soit à travers une palette de couleurs qui permet de sélectionner la ' +
+            'couleur, soit d\'entrer directement les valeurs en RGB ou en hexadecimal. Il est également possible de ' +
+            'modifier la couleur de fond de la surface de dessin. Le système mémorise également les 10 dernières ' +
+            'couleurs utilisées, et les propose à l\'utilisateur. L\'utilisateur peut choisir ces couleurs ' +
+            'en tant que couleur principale ou secondaire; un clic gauche configure la couleur en tant que couleur ' +
+            'principale, et un clic droit configure la couleur en tant que couleur secondaire.'
+    },
+    {
+        name: 'Aerosol',
+        description:
+            'L\'aérosol est un outil qui simule un effet de peinture en aérosol. Dès que le bouton est enfoncé, un jet de peinture est' +
+            'vaporisé sous le pointeur de la souris. L\'outil continu ensuite d’émettre de la peinture à intervalle' +
+            'régulier jusqu’à qu’à ce que le bouton soit relâché. Il est possible pour l\'utilisateur de choisir le diametre' +
+            'd\'emissions du jet de peinture ainsi que le nombre d\'emissions par seconde'
+    },
+    {
+        name: 'Efface',
+        description:
+            'L\'efface est un outil qui permet de supprimer des objets de la surface de dessin. Tout objet se trouvant en contact' +
+            'avec l\'efface lors d\'un clic gauche est effacé. L\'objet effacé est toujours celui « sur le dessus de la' +
+            'pile » d\'objets. Pour se servir de l\'outil comme d\'une brosse, il suffit de maintenir le bouton gauche' +
+            'enfoncé et de déplacer la souris. Tout objet touché pendant le mouvement sera alors supprimé.' +
+            'L\'efface se trouve bien entendu centrée sur le pointeur de la souris. Elle doit être représentée par un' +
+            'carré blanc de dimension configurable. C\'est lors du contact entre ce carré et un objet qu\'il y a' +
+            'effacement.'
+    },
+    {
+        name: 'Pipette',
+        description:
+            'Cet outil est utilisé pour saisir la couleur sous le pointeur de la souris. Un clic avec le bouton gauche' +
+            'assigne la couleur saisie à la couleur principale. Un clic avec bouton droit pour l\'assigner à la couleur' +
+            'secondaire. La couleur saisie est celle du pixel sous le pointeur de la souris.'
+&nbsp;
+    },
+    {
+        name: 'Sceau de peinture',
+        description:
+            'L\'outil Sceau de peinture permet de remplir une certaine région de la surface de dessin. Cette zone correspond aux pixels ' +
+            'voisins ayant la meme couleur, ainsi cela peut etre une forme (telle qu\'un rectangle ou une ligne) mais aussi une région ' +
+            'délimitée par un trait qui formerait une boucle par exemple( ou encore le fond même sur dessin). ' +
+            'Cet outil possède une tolérance (en pourcentage) qui correspond à la tolérance sur la variation entre la couleur du pixel ' +
+            'sélectionné et les pixels voisins. Ainsi avec une tolérance de 0%, seuls les pixels de la bonne couleur sont acceptés, ' +
+            'ajouté et forment ainsi la région. A l\'inverse, avec une tolérance de 100% toutes les couleurs sont acceptées. Il en ' +
+            ' résulte donc d\'une région égale à l\'entièreté de la surface de dessin.'
+    }
+];
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 16 2020 23:44:07 GMT-0400 (GMT-04:00)
+</div>
+</div>
+<script src="..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\sorter.js"></script>
+<script src="..\..\..\..\block-navigation.js"></script>
+</body>
+</html>
